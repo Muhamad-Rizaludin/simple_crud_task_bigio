@@ -1,0 +1,31 @@
+GET http://localhost:5000/products
+
+###
+POST  http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "title": "product 2",
+    "price": 2000
+}
+
+###
+GET http://localhost:5000/products/4
+
+###
+PUT http://localhost:5000/products/4
+Content-Type: application/json
+
+{
+    "title": "product Updated",
+    "price": 2500
+}
+
+###
+DELETE http://localhost:5000/products/4
+Content-Type: application/json
+
+{
+    "title": "product Updated",
+    "price": 2500
+}
